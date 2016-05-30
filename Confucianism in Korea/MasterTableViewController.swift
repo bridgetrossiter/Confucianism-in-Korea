@@ -47,6 +47,10 @@ class MasterTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        self.performSegueWithIdentifier(titles[indexPath.row], sender: self)
+    }
 
     /*
     // Override to support conditional editing of the table view.

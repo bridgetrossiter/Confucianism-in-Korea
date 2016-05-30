@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Master View Controller-->
         <scene sceneID="HP4-M1-Z1k">
             <objects>
-                <tableViewController id="GLM-Nl-C2o" customClass="MasterTableViewController" customModule="Confucianism_in_Korea" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="gO6-bs-GDc" customClass="I">
+                <tableViewController title="Master View Controller" id="GLM-Nl-C2o" customClass="MasterTableViewController" customModule="Confucianism_in_Korea" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="gO6-bs-GDc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -37,11 +37,93 @@
                             <outlet property="delegate" destination="GLM-Nl-C2o" id="wq5-Ja-5Qz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="4l5-6q-lxP"/>
+                    <navigationItem key="navigationItem" title="Menu" id="4l5-6q-lxP"/>
+                    <connections>
+                        <segue destination="UjT-Pm-0Xi" kind="show" identifier="Home" id="0he-ML-I95"/>
+                        <segue destination="2UD-EW-nFh" kind="show" identifier="Confucianism" id="S0v-Gr-PFI"/>
+                        <segue destination="sDR-s0-swB" kind="show" identifier="Movie Quizzes" id="R1p-iE-twP"/>
+                        <segue destination="qXj-fg-fua" kind="show" identifier="Information" id="TMp-cE-dAY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkS-2k-I99" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="423"/>
+            <point key="canvasLocation" x="332" y="35"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="x5M-gl-cjE">
+            <objects>
+                <viewController id="UjT-Pm-0Xi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dab-Kp-jdJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="rFw-Th-jYx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tmr-3D-tix">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="uEy-0a-Btx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiZ-CK-bYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-405" y="908"/>
+        </scene>
+        <!--Confusionism-->
+        <scene sceneID="UUJ-20-Gco">
+            <objects>
+                <viewController id="2UD-EW-nFh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="En5-hf-dmW"/>
+                        <viewControllerLayoutGuide type="bottom" id="tV5-nL-l7M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6vy-2o-4tK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confusionism" id="vvg-hz-gzx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFd-XZ-Keu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="914"/>
+        </scene>
+        <!--Movie Quizzes-->
+        <scene sceneID="rU0-IQ-16J">
+            <objects>
+                <viewController id="sDR-s0-swB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y7V-mz-Kog"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vde-cj-6gc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fnV-5Y-uYh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie Quizzes" id="EkX-Es-FAk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbs-dw-nhK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="914"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="Rbd-wJ-d6Q">
+            <objects>
+                <viewController id="qXj-fg-fua" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gGH-At-I74"/>
+                        <viewControllerLayoutGuide type="bottom" id="YMA-ce-xjx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="epa-oe-rQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="m60-if-FtL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qf4-fh-C3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cGG-qM-QE6">
@@ -57,7 +139,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yd-er-RBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358" y="423"/>
+            <point key="canvasLocation" x="-542" y="27"/>
         </scene>
     </scenes>
 </document>
