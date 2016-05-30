@@ -15,6 +15,7 @@
 		2E3B5F101CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F0F1CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift */; };
 		2E3B5F1B1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F1A1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift */; };
 		2E3B5F291CFC7157002600B2 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F281CFC7157002600B2 /* MasterTableViewController.swift */; };
+		2E3B5F2B1CFC804E002600B2 /* MovieQuizzesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2E3B5F1A1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confucianism_in_KoreaUITests.swift; sourceTree = "<group>"; };
 		2E3B5F1C1CFC70AF002600B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E3B5F281CFC7157002600B2 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuizzesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2E3B5F011CFC70AF002600B2 /* Assets.xcassets */,
 				2E3B5F031CFC70AF002600B2 /* LaunchScreen.storyboard */,
 				2E3B5F061CFC70AF002600B2 /* Info.plist */,
+				2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */,
 			);
 			path = "Confucianism in Korea";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				2E3B5EFD1CFC70AF002600B2 /* ViewController.swift in Sources */,
 				2E3B5F291CFC7157002600B2 /* MasterTableViewController.swift in Sources */,
+				2E3B5F2B1CFC804E002600B2 /* MovieQuizzesTableViewController.swift in Sources */,
 				2E3B5EFB1CFC70AF002600B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
