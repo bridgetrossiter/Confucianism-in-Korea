@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E3B5EFB1CFC70AF002600B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5EFA1CFC70AF002600B2 /* AppDelegate.swift */; };
+		2E3B5EFD1CFC70AF002600B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5EFC1CFC70AF002600B2 /* ViewController.swift */; };
+		2E3B5F001CFC70AF002600B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B5EFE1CFC70AF002600B2 /* Main.storyboard */; };
+		2E3B5F021CFC70AF002600B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B5F011CFC70AF002600B2 /* Assets.xcassets */; };
+		2E3B5F051CFC70AF002600B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B5F031CFC70AF002600B2 /* LaunchScreen.storyboard */; };
+		2E3B5F101CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F0F1CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift */; };
+		2E3B5F1B1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F1A1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E3B5F0C1CFC70AF002600B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E3B5EEF1CFC70AF002600B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E3B5EF61CFC70AF002600B2;
+			remoteInfo = "Confucianism in Korea";
+		};
+		2E3B5F171CFC70AF002600B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E3B5EEF1CFC70AF002600B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E3B5EF61CFC70AF002600B2;
+			remoteInfo = "Confucianism in Korea";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E3B5EF71CFC70AF002600B2 /* Confucianism in Korea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Confucianism in Korea.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3B5EFA1CFC70AF002600B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E3B5EFC1CFC70AF002600B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E3B5EFF1CFC70AF002600B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E3B5F011CFC70AF002600B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E3B5F041CFC70AF002600B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E3B5F061CFC70AF002600B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E3B5F0B1CFC70AF002600B2 /* Confucianism in KoreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Confucianism in KoreaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3B5F0F1CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confucianism_in_KoreaTests.swift; sourceTree = "<group>"; };
+		2E3B5F111CFC70AF002600B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E3B5F161CFC70AF002600B2 /* Confucianism in KoreaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Confucianism in KoreaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3B5F1A1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confucianism_in_KoreaUITests.swift; sourceTree = "<group>"; };
+		2E3B5F1C1CFC70AF002600B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E3B5EF41CFC70AF002600B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3B5F081CFC70AF002600B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3B5F131CFC70AF002600B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E3B5EEE1CFC70AF002600B2 = {
+			isa = PBXGroup;
+			children = (
+				2E3B5EF91CFC70AF002600B2 /* Confucianism in Korea */,
+				2E3B5F0E1CFC70AF002600B2 /* Confucianism in KoreaTests */,
+				2E3B5F191CFC70AF002600B2 /* Confucianism in KoreaUITests */,
+				2E3B5EF81CFC70AF002600B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E3B5EF81CFC70AF002600B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B5EF71CFC70AF002600B2 /* Confucianism in Korea.app */,
+				2E3B5F0B1CFC70AF002600B2 /* Confucianism in KoreaTests.xctest */,
+				2E3B5F161CFC70AF002600B2 /* Confucianism in KoreaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E3B5EF91CFC70AF002600B2 /* Confucianism in Korea */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B5EFA1CFC70AF002600B2 /* AppDelegate.swift */,
+				2E3B5EFC1CFC70AF002600B2 /* ViewController.swift */,
+				2E3B5EFE1CFC70AF002600B2 /* Main.storyboard */,
+				2E3B5F011CFC70AF002600B2 /* Assets.xcassets */,
+				2E3B5F031CFC70AF002600B2 /* LaunchScreen.storyboard */,
+				2E3B5F061CFC70AF002600B2 /* Info.plist */,
+			);
+			path = "Confucianism in Korea";
+			sourceTree = "<group>";
+		};
+		2E3B5F0E1CFC70AF002600B2 /* Confucianism in KoreaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B5F0F1CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift */,
+				2E3B5F111CFC70AF002600B2 /* Info.plist */,
+			);
+			path = "Confucianism in KoreaTests";
+			sourceTree = "<group>";
+		};
+		2E3B5F191CFC70AF002600B2 /* Confucianism in KoreaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B5F1A1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift */,
+				2E3B5F1C1CFC70AF002600B2 /* Info.plist */,
+			);
+			path = "Confucianism in KoreaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E3B5EF61CFC70AF002600B2 /* Confucianism in Korea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3B5F1F1CFC70AF002600B2 /* Build configuration list for PBXNativeTarget "Confucianism in Korea" */;
+			buildPhases = (
+				2E3B5EF31CFC70AF002600B2 /* Sources */,
+				2E3B5EF41CFC70AF002600B2 /* Frameworks */,
+				2E3B5EF51CFC70AF002600B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Confucianism in Korea";
+			productName = "Confucianism in Korea";
+			productReference = 2E3B5EF71CFC70AF002600B2 /* Confucianism in Korea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E3B5F0A1CFC70AF002600B2 /* Confucianism in KoreaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3B5F221CFC70AF002600B2 /* Build configuration list for PBXNativeTarget "Confucianism in KoreaTests" */;
+			buildPhases = (
+				2E3B5F071CFC70AF002600B2 /* Sources */,
+				2E3B5F081CFC70AF002600B2 /* Frameworks */,
+				2E3B5F091CFC70AF002600B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E3B5F0D1CFC70AF002600B2 /* PBXTargetDependency */,
+			);
+			name = "Confucianism in KoreaTests";
+			productName = "Confucianism in KoreaTests";
+			productReference = 2E3B5F0B1CFC70AF002600B2 /* Confucianism in KoreaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E3B5F151CFC70AF002600B2 /* Confucianism in KoreaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3B5F251CFC70AF002600B2 /* Build configuration list for PBXNativeTarget "Confucianism in KoreaUITests" */;
+			buildPhases = (
+				2E3B5F121CFC70AF002600B2 /* Sources */,
+				2E3B5F131CFC70AF002600B2 /* Frameworks */,
+				2E3B5F141CFC70AF002600B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E3B5F181CFC70AF002600B2 /* PBXTargetDependency */,
+			);
+			name = "Confucianism in KoreaUITests";
+			productName = "Confucianism in KoreaUITests";
+			productReference = 2E3B5F161CFC70AF002600B2 /* Confucianism in KoreaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E3B5EEF1CFC70AF002600B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Bridget Rossiter";
+				TargetAttributes = {
+					2E3B5EF61CFC70AF002600B2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9Z5LEG4FR3;
+					};
+					2E3B5F0A1CFC70AF002600B2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9Z5LEG4FR3;
+						TestTargetID = 2E3B5EF61CFC70AF002600B2;
+					};
+					2E3B5F151CFC70AF002600B2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9Z5LEG4FR3;
+						TestTargetID = 2E3B5EF61CFC70AF002600B2;
+					};
+				};
+			};
+			buildConfigurationList = 2E3B5EF21CFC70AF002600B2 /* Build configuration list for PBXProject "Confucianism in Korea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E3B5EEE1CFC70AF002600B2;
+			productRefGroup = 2E3B5EF81CFC70AF002600B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E3B5EF61CFC70AF002600B2 /* Confucianism in Korea */,
+				2E3B5F0A1CFC70AF002600B2 /* Confucianism in KoreaTests */,
+				2E3B5F151CFC70AF002600B2 /* Confucianism in KoreaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E3B5EF51CFC70AF002600B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3B5F051CFC70AF002600B2 /* LaunchScreen.storyboard in Resources */,
+				2E3B5F021CFC70AF002600B2 /* Assets.xcassets in Resources */,
+				2E3B5F001CFC70AF002600B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3B5F091CFC70AF002600B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3B5F141CFC70AF002600B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E3B5EF31CFC70AF002600B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3B5EFD1CFC70AF002600B2 /* ViewController.swift in Sources */,
+				2E3B5EFB1CFC70AF002600B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3B5F071CFC70AF002600B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3B5F101CFC70AF002600B2 /* Confucianism_in_KoreaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E3B5F121CFC70AF002600B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3B5F1B1CFC70AF002600B2 /* Confucianism_in_KoreaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E3B5F0D1CFC70AF002600B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E3B5EF61CFC70AF002600B2 /* Confucianism in Korea */;
+			targetProxy = 2E3B5F0C1CFC70AF002600B2 /* PBXContainerItemProxy */;
+		};
+		2E3B5F181CFC70AF002600B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E3B5EF61CFC70AF002600B2 /* Confucianism in Korea */;
+			targetProxy = 2E3B5F171CFC70AF002600B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E3B5EFE1CFC70AF002600B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E3B5EFF1CFC70AF002600B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E3B5F031CFC70AF002600B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E3B5F041CFC70AF002600B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E3B5F1D1CFC70AF002600B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E3B5F1E1CFC70AF002600B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E3B5F201CFC70AF002600B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Confucianism in Korea/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bridget-Rossiter.Confucianism-in-Korea";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E3B5F211CFC70AF002600B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Confucianism in Korea/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bridget-Rossiter.Confucianism-in-Korea";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E3B5F231CFC70AF002600B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Confucianism in KoreaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bridget-Rossiter.Confucianism-in-KoreaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confucianism in Korea.app/Confucianism in Korea";
+			};
+			name = Debug;
+		};
+		2E3B5F241CFC70AF002600B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Confucianism in KoreaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bridget-Rossiter.Confucianism-in-KoreaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Confucianism in Korea.app/Confucianism in Korea";
+			};
+			name = Release;
+		};
+		2E3B5F261CFC70AF002600B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Confucianism in KoreaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bridget-Rossiter.Confucianism-in-KoreaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Confucianism in Korea";
+			};
+			name = Debug;
+		};
+		2E3B5F271CFC70AF002600B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Confucianism in KoreaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bridget-Rossiter.Confucianism-in-KoreaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Confucianism in Korea";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E3B5EF21CFC70AF002600B2 /* Build configuration list for PBXProject "Confucianism in Korea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3B5F1D1CFC70AF002600B2 /* Debug */,
+				2E3B5F1E1CFC70AF002600B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E3B5F1F1CFC70AF002600B2 /* Build configuration list for PBXNativeTarget "Confucianism in Korea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3B5F201CFC70AF002600B2 /* Debug */,
+				2E3B5F211CFC70AF002600B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E3B5F221CFC70AF002600B2 /* Build configuration list for PBXNativeTarget "Confucianism in KoreaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3B5F231CFC70AF002600B2 /* Debug */,
+				2E3B5F241CFC70AF002600B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E3B5F251CFC70AF002600B2 /* Build configuration list for PBXNativeTarget "Confucianism in KoreaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3B5F261CFC70AF002600B2 /* Debug */,
+				2E3B5F271CFC70AF002600B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E3B5EEF1CFC70AF002600B2 /* Project object */;
+}
