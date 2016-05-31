@@ -151,7 +151,6 @@
         <!--Movie View Controller-->
         <scene sceneID="PmS-Pa-7JF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bb-MW-fDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SCS-bl-EM3" customClass="MovieViewController" customModule="Confucianism_in_Korea" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C7o-iT-9vo"/>
@@ -203,6 +202,7 @@
                         <outlet property="playerView" destination="CzK-Ce-kEL" id="GiM-Xd-c3q"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Bb-MW-fDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962" y="1736"/>
         </scene>

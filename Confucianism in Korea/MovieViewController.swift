@@ -17,8 +17,10 @@ class MovieViewController: UIViewController {
     @IBOutlet var playerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let videoURL = NSURL(string: "http://www.filedropper.com/castielreturnssupernaturalfanmadepromo.mp4")
-        player = AVPlayer(URL: videoURL!)
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("Test", withExtension: "mp4")!
+
+        
+        player = AVPlayer(URL: videoURL)
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.playerView.bounds
         self.playerView.layer.addSublayer(playerLayer)
@@ -53,4 +55,8 @@ class MovieViewController: UIViewController {
     }
     */
 
+}
+
+enum AppError : ErrorType {
+    case InvalidResource(String, String)
 }

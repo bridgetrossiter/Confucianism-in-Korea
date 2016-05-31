@@ -17,6 +17,7 @@
 		2E3B5F291CFC7157002600B2 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F281CFC7157002600B2 /* MasterTableViewController.swift */; };
 		2E3B5F2B1CFC804E002600B2 /* MovieQuizzesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */; };
 		2E3B5F331CFD9E3C002600B2 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F321CFD9E3C002600B2 /* MovieViewController.swift */; };
+		2E3B5F351CFDAD1C002600B2 /* Test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B5F341CFDAD1C002600B2 /* Test.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2E3B5F281CFC7157002600B2 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
 		2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuizzesTableViewController.swift; sourceTree = "<group>"; };
 		2E3B5F321CFD9E3C002600B2 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		2E3B5F341CFDAD1C002600B2 /* Test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Test.mp4; path = "../../../../../../Fanvids/Supernatural FanVids/Test.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		2E3B5EF91CFC70AF002600B2 /* Confucianism in Korea */ = {
 			isa = PBXGroup;
 			children = (
+				2E3B5F361CFDAD23002600B2 /* Videos */,
 				2E3B5EFA1CFC70AF002600B2 /* AppDelegate.swift */,
 				2E3B5EFC1CFC70AF002600B2 /* ViewController.swift */,
 				2E3B5EFE1CFC70AF002600B2 /* Main.storyboard */,
@@ -132,6 +135,14 @@
 				2E3B5F1C1CFC70AF002600B2 /* Info.plist */,
 			);
 			path = "Confucianism in KoreaUITests";
+			sourceTree = "<group>";
+		};
+		2E3B5F361CFDAD23002600B2 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				2E3B5F341CFDAD1C002600B2 /* Test.mp4 */,
+			);
+			name = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3B5F351CFDAD1C002600B2 /* Test.mp4 in Resources */,
 				2E3B5F051CFC70AF002600B2 /* LaunchScreen.storyboard in Resources */,
 				2E3B5F021CFC70AF002600B2 /* Assets.xcassets in Resources */,
 				2E3B5F001CFC70AF002600B2 /* Main.storyboard in Resources */,
