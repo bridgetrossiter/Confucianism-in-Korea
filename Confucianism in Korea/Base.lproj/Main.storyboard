@@ -83,9 +83,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Confusionism" id="vvg-hz-gzx"/>
-                    <connections>
-                        <segue destination="SCS-bl-EM3" kind="showDetail" id="OxQ-VJ-F0u"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFd-XZ-Keu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,6 +167,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-Ti-xnH">
                                 <rect key="frame" x="0.0" y="320" width="600" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nuV-zQ-Qzf"/>
                                     <barButtonItem systemItem="play" id="h2X-4k-r2d">
                                         <connections>
                                             <action selector="play:" destination="SCS-bl-EM3" id="if8-fF-wfu"/>
@@ -185,6 +183,7 @@
                                             <action selector="rewind:" destination="SCS-bl-EM3" id="eIK-PU-0uq"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YEx-90-iCH"/>
                                 </items>
                             </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Fg-9h-pfS">
@@ -216,6 +215,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Bb-MW-fDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962" y="1736"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CVJ-lW-RCm">
+            <objects>
+                <viewController id="XCc-St-fm5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4M-gJ-cK9"/>
+                        <viewControllerLayoutGuide type="bottom" id="QlF-v5-mHM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRn-tI-gHE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VB7-df-JoL">
+                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="IMf-eF-u25"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x8t-Us-Tcn">
+                                <rect key="frame" x="20" y="364" width="560" height="236"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eM-gr-SBT">
+                                <rect key="frame" x="0.0" y="320" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="2es-rP-h63"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="x8t-Us-Tcn" secondAttribute="leading" id="1hn-Df-jC1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6eM-gr-SBT" secondAttribute="trailing" constant="-20" id="J5I-el-35B"/>
+                            <constraint firstItem="x8t-Us-Tcn" firstAttribute="top" secondItem="6eM-gr-SBT" secondAttribute="bottom" id="SNO-30-gBe"/>
+                            <constraint firstItem="VB7-df-JoL" firstAttribute="leading" secondItem="dRn-tI-gHE" secondAttribute="leadingMargin" constant="-20" id="TWH-i5-UHs"/>
+                            <constraint firstItem="6eM-gr-SBT" firstAttribute="top" secondItem="VB7-df-JoL" secondAttribute="bottom" id="cEz-lY-OfP"/>
+                            <constraint firstItem="VB7-df-JoL" firstAttribute="top" secondItem="Y4M-gJ-cK9" secondAttribute="bottom" id="g6w-gp-00V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VB7-df-JoL" secondAttribute="trailing" constant="-20" id="mle-Gy-6gB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x8t-Us-Tcn" secondAttribute="trailing" id="nZ7-JV-tAm"/>
+                            <constraint firstItem="6eM-gr-SBT" firstAttribute="leading" secondItem="dRn-tI-gHE" secondAttribute="leadingMargin" constant="-20" id="ut0-OY-aU9"/>
+                            <constraint firstItem="QlF-v5-mHM" firstAttribute="top" secondItem="x8t-Us-Tcn" secondAttribute="bottom" id="wg5-gN-IWv"/>
+                            <constraint firstItem="x8t-Us-Tcn" firstAttribute="top" secondItem="VB7-df-JoL" secondAttribute="bottom" constant="8" id="wxZ-Ay-cn8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wxZ-Ay-cn8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCG-sJ-Eby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685" y="1736"/>
         </scene>
         <!--Information-->
         <scene sceneID="Rbd-wJ-d6Q">
