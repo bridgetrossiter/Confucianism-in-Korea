@@ -18,6 +18,7 @@
 		2E3B5F2B1CFC804E002600B2 /* MovieQuizzesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */; };
 		2E3B5F331CFD9E3C002600B2 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F321CFD9E3C002600B2 /* MovieViewController.swift */; };
 		2E3B5F351CFDAD1C002600B2 /* Test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B5F341CFDAD1C002600B2 /* Test.mp4 */; };
+		2E3B5F381CFEBFD7002600B2 /* QuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B5F371CFEBFD7002600B2 /* QuestionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2E3B5F2A1CFC804E002600B2 /* MovieQuizzesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieQuizzesTableViewController.swift; sourceTree = "<group>"; };
 		2E3B5F321CFD9E3C002600B2 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		2E3B5F341CFDAD1C002600B2 /* Test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Test.mp4; path = "../../../../../../Fanvids/Supernatural FanVids/Test.mp4"; sourceTree = "<group>"; };
+		2E3B5F371CFEBFD7002600B2 /* QuestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				2E3B5F361CFDAD23002600B2 /* Videos */,
 				2E3B5EFA1CFC70AF002600B2 /* AppDelegate.swift */,
+				2E3B5F371CFEBFD7002600B2 /* QuestionTableViewController.swift */,
 				2E3B5EFC1CFC70AF002600B2 /* ViewController.swift */,
 				2E3B5EFE1CFC70AF002600B2 /* Main.storyboard */,
 				2E3B5F321CFD9E3C002600B2 /* MovieViewController.swift */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3B5EFD1CFC70AF002600B2 /* ViewController.swift in Sources */,
+				2E3B5F381CFEBFD7002600B2 /* QuestionTableViewController.swift in Sources */,
 				2E3B5F331CFD9E3C002600B2 /* MovieViewController.swift in Sources */,
 				2E3B5F291CFC7157002600B2 /* MasterTableViewController.swift in Sources */,
 				2E3B5F2B1CFC804E002600B2 /* MovieQuizzesTableViewController.swift in Sources */,
