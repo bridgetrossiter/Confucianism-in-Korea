@@ -24,6 +24,7 @@ class MovieViewController: UIViewController {
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.playerView.bounds
         self.playerView.layer.addSublayer(playerLayer)
+        
         player!.play()
         // Do any additional setup after loading the view.
     }

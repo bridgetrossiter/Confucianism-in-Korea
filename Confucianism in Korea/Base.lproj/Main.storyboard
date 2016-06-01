@@ -161,14 +161,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CzK-Ce-kEL">
-                                <rect key="frame" x="0.0" y="20" width="600" height="342"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="342" id="zak-if-Zxv"/>
+                                    <constraint firstAttribute="height" constant="300" id="zak-if-Zxv"/>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-Ti-xnH">
-                                <rect key="frame" x="0.0" y="362" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="320" width="600" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="play" id="h2X-4k-r2d">
                                         <connections>
@@ -187,14 +187,25 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Fg-9h-pfS">
+                                <rect key="frame" x="20" y="364" width="560" height="236"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZbZ-Ti-xnH" firstAttribute="top" secondItem="CzK-Ce-kEL" secondAttribute="bottom" id="0KH-yF-rs8"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4Fg-9h-pfS" secondAttribute="leading" id="5uw-Ys-SDF"/>
                             <constraint firstItem="CzK-Ce-kEL" firstAttribute="leading" secondItem="aTo-qi-4y3" secondAttribute="leadingMargin" constant="-20" id="UtX-O8-bh6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CzK-Ce-kEL" secondAttribute="trailing" constant="-20" id="WXU-FH-jQo"/>
                             <constraint firstItem="CzK-Ce-kEL" firstAttribute="top" secondItem="C7o-iT-9vo" secondAttribute="bottom" id="ZCE-BC-o1L"/>
+                            <constraint firstItem="u4U-AQ-251" firstAttribute="top" secondItem="4Fg-9h-pfS" secondAttribute="bottom" id="f2H-T8-xox"/>
                             <constraint firstItem="ZbZ-Ti-xnH" firstAttribute="leading" secondItem="aTo-qi-4y3" secondAttribute="leadingMargin" constant="-20" id="ikm-RY-vPr"/>
+                            <constraint firstItem="4Fg-9h-pfS" firstAttribute="top" secondItem="ZbZ-Ti-xnH" secondAttribute="bottom" id="qQL-lz-9HO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Fg-9h-pfS" secondAttribute="trailing" id="r8v-iz-b3z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZbZ-Ti-xnH" secondAttribute="trailing" constant="-20" id="y5V-Zj-Olo"/>
                         </constraints>
                     </view>
