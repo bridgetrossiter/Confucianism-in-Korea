@@ -12,13 +12,23 @@ import AVFoundation
 
 class MovieViewController: UIViewController {
     
+    var questionNumber: Int?
     var player: AVPlayer? = nil
+    var media: Media?
 
     @IBOutlet var playerView: UIView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource("Test", withExtension: "mp4")!
-
+    
+    func nextQuestion(){
+        if questionNumber != 4 {
+            questionNumber = questionNumber! + 1 }
+        else {
+            questionNumber = 0
+        }
+    }
+    
+    func loadMovie() {
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource(media?.imageMovies![questionNumber!], withExtension: "mp4")!
+        
         
         player = AVPlayer(URL: videoURL)
         let playerLayer = AVPlayerLayer(player: player)
@@ -26,7 +36,15 @@ class MovieViewController: UIViewController {
         self.playerView.layer.addSublayer(playerLayer)
         
         player!.play()
-        // Do any additional setup after loading the view.
+
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        media = Media(mediaName: "Seopyeonje")
+        questionNumber = 0;
+        loadMovie()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,15 +64,21 @@ class MovieViewController: UIViewController {
         player!.seekToTime(kCMTimeZero)
         
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "question") {
+            let destinationVC = segue.destinationViewController as! QuestionTableViewController
+            destinationVC.type = self.media?.type
+            destinationVC.questionNumber = self.questionNumber
+            
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
 

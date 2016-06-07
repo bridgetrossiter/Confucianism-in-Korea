@@ -10,8 +10,13 @@ import UIKit
 
 class QuestionTableViewController: UITableViewController {
     
+    var type: String?
+    var questionNumber: Int?
+    var questions: Media?
+    
     @IBAction func done(sender: AnyObject) {
         let tmpController :UIViewController! = self.presentingViewController;
+        
 
         self.dismissViewControllerAnimated(false, completion: {()->Void in
             print("done");
@@ -29,6 +34,7 @@ class QuestionTableViewController: UITableViewController {
     }
 
     override func viewDidLoad() {
+        questions = Media(mediaName: type!)
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -47,23 +53,23 @@ class QuestionTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 4
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("questionCell", forIndexPath: indexPath)
+            let currentRow = questions?.answers
+            cell.textLabel?.text = currentRow![questionNumber!][indexPath.row]
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
