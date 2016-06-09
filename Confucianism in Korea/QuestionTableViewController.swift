@@ -19,14 +19,27 @@ class QuestionTableViewController: UITableViewController {
         let tmpController :UIViewController! = self.presentingViewController;
         if (isCorrectAnswerSelected()) {
             let alert = UIAlertController(title: "Question", message: "You have the correct answers!", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+                switch action.style{
+                case .Default:
+                    self.dismissViewControllerAnimated(false, completion: {()->Void in
+                        print("done");
+                        self.movieViewController?.nextQuestion()
+                        tmpController.dismissViewControllerAnimated(false, completion: nil);
+                    });
+
+                    
+                case .Cancel:
+                    print("cancel")
+                    
+                case .Destructive:
+                    print("destructive")
+                }
+            }))
+            
             self.presentViewController(alert, animated: true, completion: nil)
-            self.dismissViewControllerAnimated(false, completion: {()->Void in
-                print("done");
-                self.movieViewController?.nextQuestion()
-                tmpController.dismissViewControllerAnimated(false, completion: nil);
-            });
-        } else {
+                    } else {
             let alert = UIAlertController(title: "Question", message: "Incorrect Answers", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
