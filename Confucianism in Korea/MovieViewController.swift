@@ -16,6 +16,7 @@ class MovieViewController: UIViewController {
     var player: AVPlayer? = nil
     var media: Media?
     var mediaName: String?
+    var playerLayer: AVPlayerLayer!
 
     @IBOutlet var playerView: UIView!
     
@@ -32,7 +33,7 @@ class MovieViewController: UIViewController {
         
         
         player = AVPlayer(URL: videoURL)
-        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = self.playerView.bounds
         self.playerView.layer.addSublayer(playerLayer)
         
@@ -43,8 +44,24 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MovieViewController.rotated), name: UIDeviceOrientationDidChangeNotification, object: nil)
+
         media = Media(mediaName: mediaName!)
         loadMovie()
+    }
+    
+    func rotated()
+    {
+        if(UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation))
+        {
+            playerLayer.frame = self.playerView.bounds
+        }
+        
+        if(UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation))
+        {
+            playerLayer.frame = self.playerView.bounds
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
