@@ -12,22 +12,23 @@ import AVFoundation
 
 class MovieViewController: UIViewController {
     
-    var questionNumber: Int?
+    var questionNumber = 0;
     var player: AVPlayer? = nil
     var media: Media?
+    var mediaName: String?
 
     @IBOutlet var playerView: UIView!
     
     func nextQuestion(){
-        if questionNumber != 4 {
-            questionNumber = questionNumber! + 1 }
+        if questionNumber == 3 {
+            questionNumber = 0 }
         else {
-            questionNumber = 0
+            questionNumber = questionNumber + 1
         }
     }
     
     func loadMovie() {
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource(media?.imageMovies![questionNumber!], withExtension: "mp4")!
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource(media?.imageMovies![questionNumber], withExtension: "mp4")!
         
         
         player = AVPlayer(URL: videoURL)
@@ -42,8 +43,7 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        media = Media(mediaName: "Seopyeonje")
-        questionNumber = 0;
+        media = Media(mediaName: mediaName!)
         loadMovie()
     }
 
@@ -71,6 +71,7 @@ class MovieViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "question") {
             let destinationVC = segue.destinationViewController as! QuestionTableViewController
+            destinationVC.movieViewController = self
             destinationVC.type = self.media?.type
             destinationVC.questionNumber = self.questionNumber
             

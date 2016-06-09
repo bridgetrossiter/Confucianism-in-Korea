@@ -10,7 +10,7 @@ import UIKit
 
 class MovieQuizzesTableViewController: UITableViewController {
     let movies = ["Seopyeonje", "Welcome to Dongmakgol", "Poetry", "Peppermint Candy", "Ode to My Father"]
-
+    var chosenCell = 0;
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,6 +45,11 @@ class MovieQuizzesTableViewController: UITableViewController {
         cell.textLabel?.text = movies[indexPath.row]
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        chosenCell = indexPath.row
+        self.performSegueWithIdentifier("toMovie", sender: self)
     }
     
 
@@ -83,14 +88,19 @@ class MovieQuizzesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "toMovie") {
+            let destinationVC = segue.destinationViewController as! MovieViewController
+            destinationVC.mediaName = movies[chosenCell]            
+
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }
