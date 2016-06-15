@@ -10,15 +10,18 @@ import UIKit
 
 class QuestionTableViewController: UITableViewController {
     weak var movieViewController: MovieViewController?
-    var type: String?
-    var questionNumber: Int?
-    var questions: Media?
+    var type: String!
+    var questionNumber: Int!
+    var media: Media!
     var selectedAnswers = [Int: Bool]()
+    
+    @IBOutlet var questionTextview: UITextView!
+    
     
     @IBAction func done(sender: AnyObject) {
         let tmpController :UIViewController! = self.presentingViewController;
         if (isCorrectAnswerSelected()) {
-            let alert = UIAlertController(title: "Question", message: "You have the correct answers!", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Question", message: "You have the correct answer!", preferredStyle: UIAlertControllerStyle.Alert)
             
             alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
                 switch action.style{
@@ -40,7 +43,7 @@ class QuestionTableViewController: UITableViewController {
             
             self.presentViewController(alert, animated: true, completion: nil)
                     } else {
-            let alert = UIAlertController(title: "Question", message: "Incorrect Answers", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: "Question", message: "Incorrect Answer or Not Enough Selected", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
@@ -57,10 +60,12 @@ class QuestionTableViewController: UITableViewController {
     }
 
     override func viewDidLoad() {
-        questions = Media(mediaName: type!)
-        for var i = 0; i < questions?.answers?.count; i += 1 {
+        media = Media(mediaName: type!)
+        for var i = 0; i < media.answers?[questionNumber].count; i += 1 {
             selectedAnswers[i] = false
         }
+        
+        questionTextview.text = "\n\n" + media.questions![questionNumber]
 
         super.viewDidLoad()
 
@@ -72,17 +77,13 @@ class QuestionTableViewController: UITableViewController {
     }
     
     func isCorrectAnswerSelected() -> Bool {
-        for answer in (questions?.correctAns?[questionNumber!])! {
-            print(answer)
-        }
-        
         var numberCorrect = 0;
         for (value, isSelected) in selectedAnswers {
-            let currentAnswer = questions?.answers![questionNumber!][value]
+            let currentAnswer = media.answers![questionNumber][value]
 
             if (isSelected) {
                 var isInArray = false;
-                for answer in (questions?.correctAns?[questionNumber!])! {
+                for answer in (media.correctAns?[questionNumber])! {
                     if (currentAnswer == answer) {
                         isInArray = true;
                         numberCorrect += 1
@@ -92,14 +93,14 @@ class QuestionTableViewController: UITableViewController {
                     return false;
                 }
             } else {
-                if ((questions?.correctAns?[questionNumber!].contains(currentAnswer!)) == nil) {
+                if (media.correctAns![questionNumber].contains(currentAnswer)) {
                     //has not been selected...but in correct answers
                     return false;
                 }
             }
         }
         
-        if (numberCorrect != (questions?.correctAns?[questionNumber!])!.count) {
+        if (numberCorrect != media.correctAns?[questionNumber].count) {
             return false
         }
         return true
@@ -131,14 +132,14 @@ class QuestionTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (questions?.answers?.count)!
+        return media.answers![questionNumber].count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("questionCell", forIndexPath: indexPath)
-            let currentRow = questions?.answers
-            cell.textLabel?.text = currentRow![questionNumber!][indexPath.row]
+            let currentRow = media.answers
+            cell.textLabel?.text = currentRow![questionNumber][indexPath.row]
 
         return cell
     }

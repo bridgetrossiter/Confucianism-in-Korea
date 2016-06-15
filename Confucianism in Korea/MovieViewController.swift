@@ -19,17 +19,26 @@ class MovieViewController: UIViewController {
     var playerLayer: AVPlayerLayer!
 
     @IBOutlet var playerView: UIView!
+    @IBOutlet var questionTitle: UILabel!
     
     func nextQuestion(){
         if questionNumber == 3 {
-            questionNumber = 0 }
+            questionNumber = 0
+
+        }
         else {
             questionNumber = questionNumber + 1
         }
+        questionTitle.text = "Question " +  (String)(questionNumber + 1)
+        loadMovie()
     }
     
     func loadMovie() {
-        let videoURL: NSURL = NSBundle.mainBundle().URLForResource(media?.imageMovies![questionNumber], withExtension: "mp4")!
+        player?.pause()
+        if (media?.imageMovies![questionNumber] == "NA") {
+            return;
+        }
+        let videoURL: NSURL = NSBundle.mainBundle().URLForResource(media?.imageMovies![questionNumber], withExtension: "mov")!
         
         
         player = AVPlayer(URL: videoURL)
@@ -47,6 +56,8 @@ class MovieViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MovieViewController.rotated), name: UIDeviceOrientationDidChangeNotification, object: nil)
 
         media = Media(mediaName: mediaName!)
+        questionTitle.text = "Question " +  (String)(questionNumber + 1)
+
         loadMovie()
     }
     
